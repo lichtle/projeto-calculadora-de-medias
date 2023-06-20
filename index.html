@@ -19,18 +19,25 @@
         <img src="images/icon.png" alt="ícone de gatinho lendo" />
         <h1>Calculadora de Médias</h1>
       </header>
-      <form>
-        <input type="text" placeholder="Nome da atividade" required />
+      <form id="form-atividade">
+        <input
+          type="text"
+          placeholder="Nome da atividade"
+          required
+          id="nome-atividade"
+        />
         <input
           type="number"
           min="0"
           max="10"
           placeholder="Nota da atividade"
           required
+          id="nota-atividade"
         />
         <button type="submit">Adicionar +</button>
       </form>
-      <table cellspacing="0"> <!-- Retirando o espaçamento entre as bordas da tabela -->
+      <table cellspacing="0">
+        <!-- Retirando o espaçamento entre as bordas da tabela -->
         <thead>
           <tr>
             <th>Nome da atividade</th>
@@ -38,18 +45,7 @@
             <th>Aprovado?</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Atividade 1</td>
-            <td>7</td>
-            <td>
-              <img
-                src="images/aprovado.png"
-                alt="Ícone de aprovado - gatinho sorrindo"
-              />
-            </td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
         <tfoot>
           <tr>
             <td>Média final:</td>
@@ -59,5 +55,6 @@
         </tfoot>
       </table>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
